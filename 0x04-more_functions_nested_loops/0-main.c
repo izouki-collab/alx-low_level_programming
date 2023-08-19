@@ -7,12 +7,12 @@
  * Return: Always 0.
  */
 int main(void)
-{
     char c;
-
-    c = 'A';
+    {
+    if
+    c = 'A'
     printf("%c: %d\n", c, _isupper(c));
-    c = 'a';
+    c = 'a'
     printf("%c: %d\n", c, _isupper(c));
     return (0);
 }
