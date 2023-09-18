@@ -1,17 +1,22 @@
 #include "main.h"
 
 /**
- * factorial - gets factorial of n
+ * factorial - find the factorial of an integer
  * @n: integer
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: -1 if n is less than 0
  */
 int factorial(int n)
 {
 	if (n < 0)
+	{
 		return (-1);
-	if (n == 0)
-		return (0);
-	return (n * factorial(n - 1));	
+	}
+	else if (n == 0)
+	{
+		return (1);
+	}
+	else
+	{
+		return (n * factorial(n - 1));
+	}
 }
